@@ -74,6 +74,7 @@ function App() {
           {todos.map((todo, index) => (
             <li
               key={index}
+              // eslint-disable-next-line no-useless-concat
               className={"todo" + " " + (todo.complete ? "is-complete" : "")}
             >
               <div className="leftBox" onClick={() => completeTodo(todo._id)}>
